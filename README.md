@@ -44,7 +44,7 @@ We cleaned the following 12 variables from the dataset, and we evaluated the out
   
   
   
-  ### Prediction Model: Model to support Zillow’s price prediction for a new house
+
 
 
   
