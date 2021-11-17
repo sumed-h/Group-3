@@ -39,9 +39,7 @@ We cleaned the following 12 variables from the dataset, and we evaluated the out
 
   We run eight models with various combinations of variables and with different scales of variables (Figure X). We chose model 3 as our final model because it shows the higher adjusted R suared score. Also, model 3 does not have strong multicollinearity issues and holds model assumptions, linearity assumotion, normality assumption and homoskedasticity assumption. 
 
-  Figure X -bar prlot for R2
-  
-  Figure Y -stats summary of model 3 or coefficient figrues on model 3
+   Using infomation gleaned from the ols models, we made a several predictive models. However the models we made performed less well than the model currently in use by our client.
   
   
   
@@ -52,7 +50,7 @@ We cleaned the following 12 variables from the dataset, and we evaluated the out
   
 ## Conclusion
   
-  
+   In conclusion we recomend that Zillow continues to use their current model. Get more data on macro factors to better the predictive abilities of their model.
   
   
   
