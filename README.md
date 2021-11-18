@@ -9,8 +9,7 @@ The objectives of this project are twofold. (1) Create a prediction model that w
 
 ## Business Understanding 
 
-Explain your stakeholder audience here\
-The stakeholders are Zillow. They are the most used online real estate site. The current model they use to evaluate the price of homes has a median error rate of 1.9%. However, this error rate increases to 2.3% in Washington. This results in 9.8% of houses being at or above a 10% error rate. This can equate to 10s of thousands of dollars on an individual scale and millions at a company level. We are creating a model to reduce the errors in the Washington area. Having a better model will encourage use of the site and increase revenue. \
+The stakeholders are Zillow. They are the most used online real estate site. The current model they use to evaluate the price of homes has a median error rate of 1.9%. However, this error rate increases to 2.3% in Washington. This results in 9.8% of houses being at or above a 10% error rate. This can equate to 10s of thousands of dollars on an individual scale and millions at a company level. We are creating a model to reduce the errors in the Washington area. Having a better model will encourage use of the site and increase revenue.
 
 ## Data
 We cleaned the following 12 variables from the dataset, and we evaluated the outliers, the missed entries of data, and other issues in each variable.\
@@ -29,9 +28,7 @@ We cleaned the following 12 variables from the dataset, and we evaluated the out
    
 ## Modeling
 
-<add scatter plot here> 
-  
-<add heat map here>
+With the above dataset, we built (1) an inferential model with a linear regression model and (2) a price prediction model using the feature engineering technique. 
   
 ## Regression Results
 
@@ -40,10 +37,13 @@ We cleaned the following 12 variables from the dataset, and we evaluated the out
    We conducted linear regression analysis with seven model specifications. The adjusted R-squared scores in all seven models stayed low, at between 0.4 and 0.5 (Figure 1). This tells us that these models, regardless of specification, explain only 40–50% of the entire variation in house prices. This means more than half of the housing price movement is explained by other variables or is captured by types of models other than a linear regression model. 
    Additionally, the dataset we used had strong multicollinearity. Because most of the data were related to features of houses, such as the number of bedrooms and size of each house’s living space, each variable was strongly correlated with the others. Given the strong collinearity in the dataset, we decided to choose a single linear regression model against housing grade as our inferential model for the clients. 
 
-## Figure 1
+  **Figure 1**
 ![graph1](./Images/adj_r2.png)
 
-   Using infomation gleaned from the ols models, we made a several predictive models. However the models we made performed less well than the model currently in use by our client.
+
+  ### Predictive Model: Model to support Zillow's price prediction for a new house
+  
+   Using infomation gleaned from the inferential models, we made a several predictive models. However the models we made performed less well than the model currently in use by our client.
   
   
   
