@@ -38,7 +38,7 @@ With the above dataset, we built (1) an inferential model with a linear regressi
    Additionally, the dataset we used had strong multicollinearity. Because most of the data were related to features of houses, such as the number of bedrooms and size of each house’s living space, each variable was strongly correlated with the others. Given the strong collinearity in the dataset, we decided to choose a single linear regression model against housing grade as our inferential model for the clients. 
 
   **Figure 1**
-![graph1](./Images/adj_r2.png)
+![graph1](./Image/adj_r2.png)
 
 
   ### Predictive Model: Model to support Zillow's price prediction for a new house
