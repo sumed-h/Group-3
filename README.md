@@ -37,7 +37,11 @@ We cleaned the following 12 variables from the dataset, and we evaluated the out
 
   ### Inferential Model: Model to support customers’ house purchasing decisions
 
-  We run eight models with various combinations of variables and with different scales of variables (Figure X). We chose model 3 as our final model because it shows the higher adjusted R suared score. Also, model 3 does not have strong multicollinearity issues and holds model assumptions, linearity assumotion, normality assumption and homoskedasticity assumption. 
+   We conducted linear regression analysis with seven model specifications. The adjusted R-squared scores in all seven models stayed low, at between 0.4 and 0.5 (Figure 1). This tells us that these models, regardless of specification, explain only 40–50% of the entire variation in house prices. This means more than half of the housing price movement is explained by other variables or is captured by types of models other than a linear regression model. 
+   Additionally, the dataset we used had strong multicollinearity. Because most of the data were related to features of houses, such as the number of bedrooms and size of each house’s living space, each variable was strongly correlated with the others. Given the strong collinearity in the dataset, we decided to choose a single linear regression model against housing grade as our inferential model for the clients. 
+
+## Figure 1
+![graph1](./Images/adj_r2.png)
 
    Using infomation gleaned from the ols models, we made a several predictive models. However the models we made performed less well than the model currently in use by our client.
   
