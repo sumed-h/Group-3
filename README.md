@@ -43,7 +43,7 @@ With the above dataset, we built (1) an inferential model with a linear regressi
 
   ### Predictive Model: Model to support Zillow's price prediction for a new house
   
-   Using infomation gleaned from the inferential models, we made a several predictive models. However the models we made performed less well than the model currently in use by our client.
+   Using infomation gleaned from the inferential models, we made a several predictive models. However the models we made performed less well than the model currently in use by our client. By running the predictive models with differenct data points selected by through our inferential modeling process, we were able to improve the accuracy of our model. We outperformed our baseline model, but our mrse is nearly 40% of our target.
   
   
   
@@ -54,7 +54,8 @@ With the above dataset, we built (1) an inferential model with a linear regressi
   
 ## Conclusion
   
-   In conclusion we recomend that Zillow continues to use their current model. Get more data on macro factors to better the predictive abilities of their model.
+   In conclusion we recomend that Zillow continues to use their current model. The model they currenly use has an error rate of 2.3%. Our model had an error rate near 40%. The lack of homoskedasity and linear correlation suggests that linear regression models are not a good fit for this problem. Further infomation would help as well. Getting data about income in the area, population trends, and a myraid of other factors would reduce model error. 
+   
   
   
   
