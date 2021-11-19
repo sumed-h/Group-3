@@ -5,7 +5,7 @@
 
 
 ## Overview
-The objectives of this project are twofold. (1) Create a prediction model that will help our stakeholder (Zillow’s) to predict future home prices. (2) Create an inferential model to help potential home buyers to find a house while balancing their budget constraints and their expectations for a house. We use a housing sales dataset from King County, which includes Seattle. The dataset includes the prices of houses sold between May 2014 and May 2015, as well as 20 various housing features, such as the square footage of the living space, the geographical locations of the house, and so on. With this dataset, we are building (1) a price prediction model using the feature engineering technique, and (2) an inferential model with a multiple regression model. 
+The objectives of this project are twofold. (1) Create a prediction model that will help our stakeholder (Zillow’s) to predict future home prices. (2) provide an inferential analysis to be fed into on our prediction model. We use a housing sales dataset from King County, which includes Seattle. The dataset includes the prices of houses sold between May 2014 and May 2015, as well as 20 various housing features, such as the square footage of the living space, the geographical locations of the house, and so on. With this dataset, we are building (1) a price prediction model using the feature engineering technique, and (2) an inferential model with a multiple regression model. 
 
 ## Business Understanding 
 
@@ -28,35 +28,29 @@ We cleaned the following 12 variables from the dataset, and we evaluated the out
    
 ## Modeling
 
-With the above dataset, we built (1) an inferential model with a linear regression model and (2) a price prediction model using the feature engineering technique. 
+First, we conducted inferential analysis to find the key determinants with which to predict the housing market prices. For this analysis, we used a linear regression model to determine the relationships between housing prices and the other housing features. Using the findings from the inferential analysis, we ran a price-prediction model using a linear regression model.
+ 
   
 ## Regression Results
 
-  ### Inferential Model: Model to support customers’ house purchasing decisions
+  ### Inferential Analysis
 
-   We conducted linear regression analysis with seven model specifications. The adjusted R-squared scores in all seven models stayed low, at between 0.4 and 0.5 (Figure 1). This tells us that these models, regardless of specification, explain only 40–50% of the entire variation in house prices. This means more than half of the housing price movement is explained by other variables or is captured by types of models other than a linear regression model. 
-   Additionally, the dataset we used had strong multicollinearity. Because most of the data were related to features of houses, such as the number of bedrooms and size of each house’s living space, each variable was strongly correlated with the others. Given the strong collinearity in the dataset, we decided to choose a single linear regression model against housing grade as our inferential model for the clients. 
+   We used a linear regression model for the inferential analysis. We started with a single linear regression of price and size of living area and then kept adding other housing features one by one from among the features highly related with price. We used R-squared score as the main measure with which to select a model. We kept adding features until the R-squared score stop increasing with additional features.
 
-  **Figure 1**
-![graph1](./Image/adj_r2.png)
+   Following the above rule, we selected a model that included a size of living space, a dummy variable for above-average house grade, number of floors, and a dummy for waterfront property. 
 
 
   ### Predictive Model: Model to support Zillow's price prediction for a new house
   
-   Using infomation gleaned from the inferential models, we made a several predictive models. However the models we made performed less well than the model currently in use by our client. By running the predictive models with differenct data points selected by through our inferential modeling process, we were able to improve the accuracy of our model. We outperformed our baseline model, but our mrse is nearly 40% of our target.
+   Using infomation gained from the inferential models, we made a several predictive models. developed the price-prediction model using the results of the inferential analysis. The first model was a dummy regressor, which is equal to a random selection model. Then, we included all of the features and tweaked the variables using a machine-learning algorithm and insights from the inferential analysis. 
+    
+   However the models we made performed less well than the model currently in use by our client. By running the predictive models with differenct data points selected by through our inferential modeling process, we were able to improve the accuracy of our model. We outperformed our baseline model, but our mrse is nearly 40% of our target.
   
-  
-  
-  
-
-
-
   
 ## Conclusion
   
    In conclusion we recomend that Zillow continues to use their current model. The model they currenly use has an error rate of 2.3%. Our model had an error rate near 40%. The lack of homoskedasity and linear correlation suggests that linear regression models are not a good fit for this problem. Further infomation would help as well. Getting data about income in the area, population trends, and a myraid of other factors would reduce model error. 
    
-  
   
   
 ## For More Information 
