@@ -1,4 +1,5 @@
-# Title
+# A Housing Price-prediction Model
+## —To support Zillow’s housing price-prediction model¶
 
 **Authors**: Daniel Arthur, Sumedh Bhardwaj, Emiko Naomasa
 
@@ -36,9 +37,9 @@ First, we conducted inferential analysis to find the key determinants with which
 
   ### Inferential Analysis
 
-   We used a linear regression model for the inferential analysis. We started with a single linear regression of price and size of living area and then kept adding other housing features one by one from among the features highly related with price. We used R-squared score as the main measure with which to select a model. We kept adding features until the R-squared score stop increasing with additional features.
+   We used a linear regression model for the inferential analysis. We started with a single linear regression of price and size of living area and then kept adding other housing features one by one from among the features highly related with price. We used R-squared score as the main measure with which to select a model. We kept adding features until the R-squared score stop increasing with additional features. In all model, we include zipcode to adjust an area fixed effect
 
-   Following the above rule, we selected a model that included a size of living space, a dummy variable for above-average house grade, number of floors, and a dummy for waterfront property. 
+   Following the above rule, we selected a model that included a size of living space, a dummy variable for above-average house grade. 
 
 
   ### Predictive Model: Model to support Zillow's price prediction for a new house
