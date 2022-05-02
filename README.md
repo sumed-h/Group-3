@@ -1,5 +1,5 @@
 # A Housing Price-prediction Model
-## —To support Zillow’s housing price-prediction model¶
+## —To support Zillow’s housing price-prediction model
 
 **Authors**: Daniel Arthur, Sumedh Bhardwaj, Emiko Naomasa
 
